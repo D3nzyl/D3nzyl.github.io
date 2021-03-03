@@ -1,30 +1,218 @@
-/*  
-Denzyl Chua De Han
-P1902244
-DIT/FT/1B/05
-*/
-
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Montserrat:600|);
 
-.imgContainer {
+@font-face {
+    font-family: tt_commons_bold;
+    src: url(../OTF/TT\ Commons\ Bold.otf);
+}
+@font-face {
+    font-family: tt_commons_light;
+    src: url(../OTF/TT\ Commons\ Light.otf);
+}
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    padding-bottom: 4em;
+}
+
+#me {
+    width: 200px;
+    margin-top: 3em;
+}
+
+#title{
+    font-family: tt_commons_light,sans-serif;
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+
+#sub-title{
+    font-family: tt_commons_light,sans-serif;
+    font-size: 1.5em;
+    margin-top: -1em;
+}
+
+#icon-container{
     width: 100%;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.icons {
+    font-size: 3em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.icons:hover {
+    filter:opacity(0.8);
+}
+
+#linkedin{
+    color: #0e76a8;
+}
+
+#email{
+    color: #db3e51;
+}
+
+#github {
+    color: black;
+}
+
+#text{
+    font-family: tt_commons_light,sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.work-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    display: flex;
 }
 
-.portrait {
-    width: 100%;
+.work-button:hover{
+    text-decoration: none;
+    filter: contrast(1.1);    
 }
 
-body {
-    width: 100%;
-    max-width: 1920px;
-    background: url(../images/background.png) center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
- }
+.work-box{
+    width: 11em;
+    height: 11em;
+    margin: 1em;
+    border-radius: 1em;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.work-title{
+    font-family: tt_commons_bold,sans-serif;
+    color: white;
+    font-size: 1.5em;
+}
+
+#work1{
+    background-color: #db8d8d;
+    box-shadow: 0px 8px #c48080;
+}
+
+#work2{
+    background-color: #9dc9c3;
+    box-shadow: 0px 8px #8db2ac;
+}
+
+#work3{
+    background-color: #d8a9b5;
+    box-shadow: 0px 8px #c199a4;
+}
+
+#work4{
+    background-color: #d6d396;
+    box-shadow: 0px 8px #bfbb8a;
+}
+
+#work5{
+    background-color: #d3aa8c;
+    box-shadow: 0px 8px #ba967d;
+}
+
+#work6{
+    background-color: #bdd8a0;
+    box-shadow: 0px 8px #adbf91;
+}
+
+#work7{
+    background-color: #9e9dc4;
+    box-shadow: 0px 8px #8c8caa;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {  
+    #me {
+        width: 200px;
+        margin-top: 3em;
+    }
+    #title{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+    #sub-title{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 1.2em;
+        margin-top: -1em;
+    }
+    #text{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    .work-box{
+        width: 6.5em;
+        height: 6.5em;
+        margin: 0.4em 0.4em 1em;
+        border-radius: 1em;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .work-title{
+        font-family: tt_commons_bold,sans-serif;
+        color: white;
+        font-size: 0.9em;
+    }
+    #work1{
+        background-color: #db8d8d;
+        box-shadow: 0px 4px #c48080;
+    }
+    #work2{
+        background-color: #9dc9c3;
+        box-shadow: 0px 4px #8db2ac;
+    }
+    #work3{
+        background-color: #d8a9b5;
+        box-shadow: 0px 4px #c199a4;
+    }
+    #work4{
+        background-color: #d6d396;
+        box-shadow: 0px 4px #bfbb8a;
+    }
+    #work5{
+        background-color: #d3aa8c;
+        box-shadow: 0px 4px #ba967d;
+    }
+    #work6{
+        background-color: #bdd8a0;
+        box-shadow: 0px 4px #adbf91;
+    }
+    #work7{
+        background-color: #9e9dc4;
+        box-shadow: 0px 4px #8c8caa;
+    }
+}
+ 
