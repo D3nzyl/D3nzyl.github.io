@@ -9,6 +9,19 @@
     src: url(../OTF/TT\ Commons\ Light.otf);
 }
 
+@font-face {
+    font-family: poppins;
+    src: url(../OTF/PoppinsRegular-B2Bw.otf);
+}
+@font-face {
+    font-family: poppins_light;
+    src: url(../OTF/PoppinsLight-l4Zw.otf);
+}
+@font-face {
+    font-family: poppins_bold;
+    src: url(../OTF/PoppinsBold-GdJA.otf);
+}
+
 /* CSS reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -40,18 +53,22 @@ body {
 }
 
 #title{
-    font-family: tt_commons_light,sans-serif;
-    font-size: 3.5em;
+    font-family: poppins_light,sans-serif;
+    font-size: 3em;
     margin-top: 0.5em;
     text-align: center;
 }
 
+#denzyl{
+    font-family: poppins_bold,sans-serif;
+}
+
 #sub-title{
-    font-family: tt_commons_light,sans-serif;
-    font-size: 1.5em;
+    font-family: poppins_light,sans-serif;
+    font-size: 1.3em;
     margin-top: -1em;
     text-align: center;
-    width: 40%;
+    width: 35%;
 }
 
 .sub-title-link{
@@ -92,9 +109,9 @@ body {
 }
 
 #text{
-    font-family: tt_commons_light,sans-serif;
-    font-size: 1.5em;
-    margin-top: 2em;
+    font-family: poppins_light,sans-serif;
+    font-size: 1.2em;
+    margin-top: 1em;
 }
 
 .work-container {
@@ -121,9 +138,9 @@ body {
 }
 
 .work-title{
-    font-family: tt_commons_bold,sans-serif;
+    font-family: poppins_bold,sans-serif;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 #work1{
@@ -156,11 +173,6 @@ body {
     box-shadow: 0px 8px #adbf91;
 }
 
-#work7{
-    background-color: #9e9dc4;
-    box-shadow: 0px 8px #8c8caa;
-}
-
 /* For Mobile */
 @media screen and (max-width: 540px) {  
     #me {
@@ -177,7 +189,7 @@ body {
         font-family: tt_commons_light,sans-serif;
         font-size: 1.2em;
         margin-top: -1em;
-        width: 90%;
+        width: 75%;
     }
     #text{
         font-family: tt_commons_light,sans-serif;
